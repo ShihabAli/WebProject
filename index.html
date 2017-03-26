@@ -3,6 +3,17 @@
 <head>
 	<title>School Managment System</title>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery.cycle.all.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#slider_image').cycle('fade');
+		}
+
+			);
+	</script>
 </head>
 <body>
 
@@ -37,36 +48,39 @@
 
 	<div class="container dark">
 		<div class="wrapper">
+		<div id="con">
 			<ul>
-				<li> <a href="#">Home</a></li>
-				<li> <a href="#">Student</a></li>
-				<li> <a href="#">Teacher</a></li>
-				<li> <a href="#">Panel</a></li>
-				<li> <a href="#">Contact US</a></li>
-			</ul>	
+				<li> <a href="#">HOME
+					<ul>
+						<li>Shihab</li>
+						<li>Shamim</li>
+						<li>Eyakub</li>
+						<li>Sraboni</li>
+					</ul>
+				</a></li>
+				<li> <a href="#">STUDENT</a></li>
+				<li> <a href="#">TEACHER</a></li>
+				<li> <a href="#">PANEL</a></li>
+				<li> <a href="#">LOG-IN</a></li>
+			</ul>
+		</div>		
 		</div>	
 	</div>
 
 	<div class="container light">
 		<div class="wrapper">
-			<div class="slider_image">
-				<img src="image/f-4.jpg">
+			<div id="slider_image">
+				<img src="image/f-1.jpg" height="323px" width="930px">
+				<img src="image/f-2.jpg" height="323px" width="930px">
+				<img src="image/f-3.jpg" height="323px" width="930px">
+				<img src="image/f-4.jpg" height="323px" width="930px">
+				<img src="image/f-1.jpg" height="323px" width="930px">
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="wrapper">
-			<div id="text_image">
-				<img src="image/t-1.png" onmouseover="this.src='image/t-2.png'" onmouseout ="this.src='image/t-1.png'">
-			</div>
-				<h3>Wellcome to our School</h3>
-					<p>
-						Ideally, you have a basic understanding of HTML (Hypertext Markup Language) but it’s not
-						essential. The HTML that makes up the web page built upon throughout CSS3 Foundations is
-						provided for you and described in Chapter 2. So, whether you’ve chosen to start learning CSS
-						before HTML, or vice versa, you’ll be gently eased into both technologies.
-					</p>
-
+			
 					<div id="div_text">
 					<h3>Current Teacher's</h3>
 						<div id="text_image">
@@ -109,23 +123,70 @@
 	<div class="container light">
 		<div class="wrapper">
 			<div id="bottom_div_left">
+			<h3 id="bottom_div_left_text">More Information About School</h3>
 				<p>
+				<img src="image/L-2.png" align="left">
 					Ideally, you have a basic understanding of HTML (Hypertext Markup Language) but it’s not
+					essential. The HTML that makes up the web page built upon throughout CSS3 Foundations is
+					provided for you and described in Chapter 2. So, whether you’ve chosen to start learning CSS
+					before HTML, or vice versa, you’ll be gently eased into both technologies.Ideally, you have a basic understanding of HTML (Hypertext Markup Language) but it’s not
 					essential. The HTML that makes up the web page built upon throughout CSS3 Foundations is
 					provided for you and described in Chapter 2. So, whether you’ve chosen to start learning CSS
 					before HTML, or vice versa, you’ll be gently eased into both technologies.
 				</p>
 			</div>
 			<div id="bottom_div_right">
-				<p>
-					Ideally, you have a basic understanding of HTML (Hypertext Markup Language) but it’s not
-					essential. The HTML that makes up the web page built upon throughout CSS3 Foundations is
-					provided for you and described in Chapter 2. So, whether you’ve chosen to start learning CSS
-					before HTML, or vice versa, you’ll be gently eased into both technologies.
-				</p>
+				<div id="latest_news">
+					<h2>Importance link</h2>
+					<p>
+					<img src="image/marker.gif">
+						Rajshahi Education Board Bangladesh
+					</p>
+					<p>
+					<img src="image/marker.gif">
+						Rajshahi Education Board Bangladesh
+					</p>
+					<p>
+					<img src="image/marker.gif">
+						 Secondary and Higher Secondary Education
+					</p>
+					<p>
+					<img src="image/marker.gif">
+						Education Ministry Bangladesh
+					</p>
+					<p>
+					<img src="image/marker.gif">
+						Education Board Result
+					</p>
+				</div>
 			</div>
 			<div id="clear">
 			</div>
+		</div>
+	</div>
+	<div class="container dark">
+		<div class="wrapper">
+			<div id="footer_section">
+				<h3>School Managmet Project</h3>
+				<p>
+					We Design from Our Passion
+				</p>
+			</div>	
+			<div id="footer_section">
+				<h3>Teacher Student are Here</h3>
+				
+			</div>	
+			<div id="footer_section">
+				<h3>Contact US</h3>
+				<p>
+					Dhanmondi-32, Dhaka
+				</p><p>
+					Email: cse.need@gmail.com 
+				</p>
+				<p>
+					Mobile: 01918-555078
+				</p>
+			</div>	
 		</div>
 	</div>
 </body>
