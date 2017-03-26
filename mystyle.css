@@ -2,6 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 }
+body{
+	background: url(image/bg.png);
+}
 h3, li{
 	font-family: 'Acme', sans-serif;
 }
@@ -9,7 +12,7 @@ h3, li{
 	width: 100%;
 }
 .wrapper{
-	width: 900px;
+	width: 1000px;
 	margin: auto;
 }
 .dark{
@@ -32,7 +35,6 @@ h3, li{
 	line-height: 40px;
 }
 #logo_left{
-	
 	display: inline-block;
 }
 #logo_right{
@@ -55,31 +57,31 @@ h3, li{
 #clear{
 	clear: both;
 }
-#con ul{
+ul{
 	list-style: none;
 }
-#con ul li{
-	display: inline-block;
-	width: 175px;
+ul li{
+	text-decoration: none;
+	background-color: grey;
+	width: 200px;
 	height: 45px;
 	line-height: 45px;
 	text-align: center;
-}
-#con ul li a{
 	color: white;
-	text-decoration: none;
-	display: block;
+	float: left;
 	font-size: 25px;
 	position: relative;
 }
-#con ul li a:hover{
+ ul li:hover{
+ 	text-decoration: none;
 	color: black;
 	background-color: orange;
+	cursor: pointer;
 }
-#con ul ul {
+ul ul {
 		display: none;
 	}
-#con ul li a:hover >ul {
+ul li:hover >ul {
 		display: block;
 	}
 
@@ -87,7 +89,7 @@ h3, li{
 	height: 370px;
 }*/
 #slider_image img{ 
-	width: 800px;
+	width: 980px;
 	border: 1px solid gray;
 	padding: 15px;
 	background-color: #eee;
@@ -110,7 +112,7 @@ img{
 	 max-width: 100%;
 }
 #div_text{
-	width: 260px;
+	width: 290px;
 	margin: 3px;
 	display: inline-block;
 	margin-top: 15px;
@@ -141,20 +143,22 @@ img{
 #bottom_div_left_text{
 	text-align: left;
 }
-#latest_news p{
+#link p{
 	margin-top: 10px;
-	cursor: pointer;
 }
 #footer_section{
-	width: 260px;
+	width: 450px;
 	margin: 3px;
 	display: inline-block;
 	margin-top: 15px;
-	/*box-shadow: 5px 5px 10px grey;*/
 	padding: 15px;
 	margin-bottom: 15px;
 	color :white;
 }
 #footer_section p{
 	text-align: center;
+}
+#link p:hover{
+	color: green;
+	cursor: pointer;
 }
