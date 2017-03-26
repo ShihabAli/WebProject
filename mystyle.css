@@ -106,11 +106,11 @@ img{
 }
 #bottom_div_left{
 	width: 570px;
-	/* border: 1px solid red; */
+	border: 1px solid red; 
 	display: inline-block;
 	margin-top: 15px;
 }
-#botom_div_right{
+#bottom_div_right{
 	width: 290;
 	border:1px solid red;
 	float: right;
