@@ -17,10 +17,15 @@ h3, li{
 }
 .dark{
 	background-color: #31353d;
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 20px;
 	
 }
 .light{
 	background-color: #e9edf2;
+	width: 1000px;
+	margin: 0 auto;
 }
 #top_left{
 	display: inline-block;
@@ -44,11 +49,13 @@ h3, li{
 #textstyle{
 	border-radius: 4px;
 	height: 30px;
+	border: none;
 }
 #button{
 	background-color: green;
 	color: white;
-	padding: 7px;
+	padding:4px;
+	margin-right: 10px;
 	border-radius: 4px;
 	width: 70px;
 	border: 1px solid green;
@@ -57,6 +64,9 @@ h3, li{
 #clear{
 	clear: both;
 }
+.menu{
+	padding-top: 20px;
+}
 ul{
 	list-style: none;
 }
@@ -64,38 +74,73 @@ ul li{
 	text-decoration: none;
 	background-color: grey;
 	width: 200px;
-	height: 45px;
+	height: 40px;
 	line-height: 45px;
 	text-align: center;
 	color: white;
 	float: left;
 	font-size: 25px;
 	position: relative;
+	padding: 10px 0px;
 }
- ul li:hover{
+ ul li a:{
+ 	padding: 10px 0px;
  	text-decoration: none;
 	color: black;
 	background-color: orange;
 	cursor: pointer;
 }
+ul li:hover{
+	background:green;
+}
+.li_a li{
+	text-decoration: none;
+	background-color:grey;
+	width: 200px;
+	height: 40px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	float: left;
+	font-size: 25px;
+	position: relative;
+	padding: 10px 0px;
+}
+.li_a li a{
+	padding: 10px 0px;
+ 	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+.li_a li:hover{
+	background:#388222;
+}
 ul ul {
-		display: none;
+	display: none;
 	}
 ul li:hover >ul {
-		display: block;
-	}
+	display: block;
+	color: #000;
+}
 
 /*#slider_image{
 	height: 370px;
 }*/
-#slider_image img{ 
+
+/* one-slide */
+#owl-one-slide .item img{
+    width: 100%;
+    height:500px;
+}
+/*slider end*/
+/*#slider_image img{ 
 	width: 980px;
 	border: 1px solid gray;
 	padding: 15px;
 	background-color: #eee;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
+}*/
 h3{
 	text-align: center;
 	text-transform: uppercase;
@@ -161,4 +206,19 @@ img{
 #link p:hover{
 	color: green;
 	cursor: pointer;
+}
+.li_a li a{
+	text-decoration: none;
+}
+.social-icon{
+	padding: 10px 0px;
+ 	text-align: center;
+}
+.social-icon a{
+	font-size: 20px;
+	color: #fff;
+	margin-left: 5px;
+}
+.social-icon a:hover{
+	color: blue;
 }
